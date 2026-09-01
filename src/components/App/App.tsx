@@ -1,11 +1,11 @@
 import { useState } from "react";
-import type { Movie } from "./types/movie";
+import type { Movie } from "../../types/movie";
 
-import SearchBar from "./components/SearchBar/SearchBar";
-import MovieGrid from "./components/MovieGrid/MovieGrid";
-import MovieModal from "./components/MovieModal/MovieModal";
+import SearchBar from "../SearchBar/SearchBar";
+import MovieGrid from "../MovieGrid/MovieGrid";
+import MovieModal from "../MovieModal/MovieModal";
 
-import { fetchMovies } from "./services/moveService";
+import { fetchMovies } from "../../services/moveService";
 
 function App() {
   const [movies, setMovies] = useState<Movie[]>([]);
